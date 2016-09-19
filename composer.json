@@ -1,0 +1,11 @@
+{
+	"name" : "VisioM/Domodata_EedomusImport",
+	"license" : "GPL-2.0+",
+	"require" : {
+		"php" : ">=5.5",
+		"vrana/notorm" : "dev-master",
+		"apache/log4php" : "~2.3",
+		"slim/slim" : "2.6.2",
+		"slim/extras" : "2.0.3"
+	}
+}

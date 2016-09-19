@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# rewrite rule to display help
+RewriteRule ^help/(.*) swagger-ui/$1 [L]
+
+# rewrite rule to display logs
+#RewriteRule ^log/(.*) logview.html
+
+# Rewrite rule to handle get method on xml files
+#RewriteCond  %{REQUEST_METHOD}  ^GET$
+#RewriteRule ^/meteo/previsions xml/previsions.xml [L]
+
+# General rewrite rule
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*) api.php/$1
